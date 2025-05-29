@@ -1,0 +1,157 @@
+/* Services Section */
+.page-title {
+    background-color: #f5f5f5;
+    padding: 30px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.page-title h1 {
+    font-size: 28px;
+    color: #333;
+    margin: 0;
+    font-weight: 500;
+}
+
+.breadcrumb {
+    margin: 0;
+    padding: 0;
+    background: none;
+}
+
+.breadcrumb-item a {
+    color: #666;
+    text-decoration: none;
+}
+
+.breadcrumb-item.active {
+    color: #999;
+}
+
+.services-section {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.services-section h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 60px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.service-card {
+    background: #fff;
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    text-align: center;
+    height: 100%;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+
+.service-icon {
+    margin-bottom: 25px;
+}
+
+.service-icon i {
+    font-size: 55px;
+    color: #28a745;
+}
+
+.service-card h3 {
+    font-size: 22px;
+    color: #222;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.service-card p {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 70px 0 50px;
+}
+
+footer h5 {
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 25px;
+    font-weight: 500;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 12px;
+}
+
+.footer-links a {
+    color: #999;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #fff;
+}
+
+.newsletter-form input {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: #fff;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+}
+
+.newsletter-form input::placeholder {
+    color: #999;
+}
+
+.payment-methods {
+    margin-top: 20px;
+}
+
+.payment-methods img {
+    height: 30px;
+    background: #fff;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .service-card {
+        margin-bottom: 20px;
+    }
+
+    .page-title {
+        padding: 20px 0;
+    }
+
+    .services-section {
+        padding: 50px 0;
+    }
+
+    .services-section h2 {
+        margin-bottom: 40px;
+    }
+}

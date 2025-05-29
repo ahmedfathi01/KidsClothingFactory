@@ -1,0 +1,66 @@
+# Children's Clothing Factory Management System - Project Rules
+
+## Project Structure
+- Laravel-based MVC architecture
+- Blade templates with Tailwind CSS for frontend
+- Role-based access control using Spatie Permission
+- Repository and Service layer patterns
+
+## Naming Conventions
+- Controllers follow singular PascalCase naming (e.g., ProductController)
+- Models use singular PascalCase (e.g., Product)
+- Database tables use plural snake_case (e.g., product_images)
+- Views use lowercase with dots for hierarchy (e.g., admin.products.index)
+- Routes use kebab-case for URLs
+
+## Language Preferences
+- Primary language: Arabic
+- Interface text should be in Arabic
+- Code comments and variable names in English
+- Right-to-left (RTL) layout support
+
+## Database Patterns
+- Foreign keys follow convention: singular_table_name_id
+- Soft deletes implemented on most models
+- Timestamps used consistently
+- UUID for public-facing identifiers (orders)
+
+## Authentication & Authorization
+- Two main roles: admin and customer
+- Permissions managed through Spatie Permission
+- Middleware groups for role-based access
+- Admin routes prefixed with /admin
+
+## Common Patterns
+- Products have variants: sizes, colors, quantities
+- Cart and order items share similar structure
+- Images stored in public/storage with optimization
+- Form validation follows Laravel conventions
+- Flash messages for user feedback
+
+## Frontend Approach
+- Mobile-first responsive design
+- Tailwind CSS for styling
+- Custom components follow consistent pattern
+- FontAwesome icons used throughout
+- Form validation with client and server-side checks
+
+## Key Implementation Paths
+- Product image handling via storage:link
+- Order status workflow (pending → processing → completed)
+- Cart persistence mechanism
+- Admin dashboard metrics calculation
+- Customer order history and tracking
+
+## Known Challenges
+- Image optimization for product variants
+- Complex form validation for multi-step checkout
+- Performance optimization for product filtering
+- Mobile responsiveness for complex tables in admin
+- Payment gateway integration
+
+## Development Workflow
+- Feature-based branches
+- Incremental implementation
+- Mobile-first testing approach
+- Arabic language support verification

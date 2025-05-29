@@ -1,0 +1,178 @@
+/* Page Title Section */
+.page-title {
+    background-color: #f8f8f8;
+    padding: 30px 0;
+    border-bottom: none;
+}
+
+.page-title h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.breadcrumb {
+    background: transparent;
+    padding: 0;
+    margin: 0;
+}
+
+.breadcrumb-item {
+    font-size: 0.95rem;
+    color: #888;
+}
+
+.breadcrumb-item a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.breadcrumb-item a:hover {
+    color: #28a745;
+}
+
+.breadcrumb-item.active {
+    color: #999;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    color: #999;
+}
+
+/* About Section */
+.about-section {
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+.about-section img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.about-section h2 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+    padding-bottom: 0;
+}
+
+.about-section h2::after {
+    display: none;
+}
+
+.about-section p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Why Choose Us List */
+.why-choose-list {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.why-choose-list li {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: flex-start;
+    transition: none;
+}
+
+.why-choose-list li:hover {
+    transform: none;
+}
+
+.why-choose-list i {
+    font-size: 1.1rem;
+    margin-left: 10px;
+    margin-right: 0;
+    color: #28a745;
+    margin-top: 3px;
+}
+
+/* Style for feature labels and descriptions */
+.why-choose-list li strong {
+    font-weight: 600;
+    color: #333;
+}
+
+/* Remove animations for a cleaner look */
+.about-section img,
+.about-section h2,
+.about-section p,
+.why-choose-list li {
+    animation: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 991px) {
+    .about-section {
+        padding: 50px 0;
+    }
+
+    .about-section h2 {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-title {
+        padding: 25px 0;
+    }
+
+    .page-title h1 {
+        font-size: 1.75rem;
+    }
+
+    .about-section {
+        padding: 40px 0;
+    }
+
+    .about-section img {
+        margin-bottom: 25px;
+    }
+
+    .about-section h2 {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+
+    .about-section p {
+        font-size: 0.95rem;
+        margin-bottom: 25px;
+    }
+
+    .why-choose-list li {
+        font-size: 0.95rem;
+        margin-bottom: 14px;
+        line-height: 1.5;
+    }
+}
+
+/* Footer Newsletter Input */
+.newsletter-form input {
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    padding: 10px 15px;
+}
+
+.newsletter-form input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.newsletter-form input:focus {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.3);
+    color: #fff;
+    box-shadow: none;
+}
